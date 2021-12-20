@@ -79,7 +79,7 @@
        		num_layer {
 		bindings = <
 		&kp NUM_1       &kp NUM_2      &kp NUM_3       &kp NUM_4       &kp NUM_5             &kp NUM_6    &kp NUM_7      &kp NUM_8      &kp NUM_9     &kp NUM_0 
-		&mt LMETA GRAVE &mt LALT TILDE &mt LSHFT MINUS &mt LCTRL EQUAL &kp A                 &kp A        &mt RCTRL LPAR &mt RSHFT RPAR &mt RALT APOS &mt RMETA BSLH
+		&mt LMETA GRAVE &mt LALT TILDE &mt LSHFT MINUS &mt LCTRL EQUAL &none                 &kp A        &mt RCTRL LPAR &mt RSHFT RPAR &mt RALT APOS &mt RMETA BSLH
 		&kp A           &kp A  	       &kp A           &kp A           &kp A                 &kp A        &kp LBKT       &kp RBKT       &kp A         &kp A  
 					                                   &kp A           &kp SPACE             &mt DEL BSPC &lt HYPER RET
 		>;
