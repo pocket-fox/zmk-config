@@ -72,7 +72,7 @@
 		&mt ESC Q   &kp W      &kp F       &kp P       &kp B                &kp J        &kp L       &kp U       &kp Y      &kp SEMI 
 		&mt LMETA A &mt LALT R &mt LSHFT S &mt LCTRL T &kp G                &kp M        &mt RCTRL N &mt RSHFT E &mt RALT I &mt RMETA O
 		&kp Z       &kp X      &kp C       &kp D       &kp V                &kp K        &kp H       &kp CMMA    &kp DOT    &kp FSLH
-                                           &lt NUM TAB &kp SPACE            &mt DEL BSPC &lt NAV RET
+                                           &lt NUM TAB &kp SPACE            &kp BSPC     &lt NAV RET
 		>;
 		};
 
@@ -81,7 +81,7 @@
 		&kp NUM_1       &kp NUM_2      &kp NUM_3       &kp NUM_4       &kp NUM_5             &kp NUM_6    &kp NUM_7      &kp NUM_8      &kp NUM_9     &kp NUM_0 
 		&mt LMETA GRAVE &mt LALT TILDE &mt LSHFT MINUS &mt LCTRL EQUAL &none                 &none        &mt RCTRL LPAR &mt RSHFT RPAR &mt RALT APOS &mt RMETA BSLH
 		&none           &none  	       &none           &none           &none                 &none        &kp LBKT       &kp RBKT       &none         &none  
-					                                   &none           &kp SPACE             &mt DEL BSPC &lt HYPER RET
+					                                   &none           &kp SPACE             &kp BSPC     &lt HYPER RET
 		>;
 		};
 		
@@ -90,7 +90,7 @@
 		&none     &none    &none     &none         &none               &none        &none    &none  &none     &none 
 		&kp LMETA &kp LALT &kp LSHFT &kp LCTRL     &none               &kp LEFT     &kp DOWN &kp UP &kp RIGHT &none
 		&none     &none    &none     &none         &none               &none        &none    &none  &none     &none
-                                     &lt HYPER TAB &kp SPACE           &mt DEL BSPC &none 
+                                     &lt HYPER TAB &kp SPACE           &mt BSPC     &none 
 		>;
 		};	
 		
@@ -99,7 +99,7 @@
 		&kp F1  &kp F2     &kp F3       &kp F4     &kp F5              &kp F6       &kp F7      &kp F8  &kp F9  &kp F10
 		&kp F11 &kp F12    &kp F13      &kp F14    &kp F15             &kp F16      &kp F17     &kp F18 &kp F19 &kp F20 
 		&reset  &bt BT_PRV &bt BT_SEL 0 &bt BT_NXT &bootloader         &kp C_POWER  &kp C_SLEEP &none   &none   &to ALPHA   
-					                    &none      &kp SPACE           &mt DEL BSPC &none 
+					                    &none      &kp SPACE           &mt BSPC     &none 
 		>;
 		};	
         
