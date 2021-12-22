@@ -12,7 +12,7 @@
 #define NUM   1
 #define NAV   2
 #define HYPER 3
-#define HAME  4
+#define GAME  4
 
 
 &mt {
