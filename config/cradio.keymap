@@ -12,55 +12,57 @@
 #define NUM   1
 #define NAV   2
 #define HYPER 3
+#define GAME  4
 
 
 &mt {
   flavor = "tap-preferred";
   tapping_term_ms = <200>;
-  quick_tap_ms = <100>;
+  quick_tap_ms = <150>;
 };
 
 / { 
 
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        
-         combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-        
-            combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-        
-                    combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
-        
-                           combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&kp LGUI>;
-        };
-        
-        
-           combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
-        };
-        
+/*
+ *  combos {
+ *      compatible = "zmk,combos";
+ *      combo_esc {
+ *          timeout-ms = <50>;
+ *          key-positions = <0 1>;
+ *          bindings = <&kp ESC>;
+ *      };
+ *      
+ *       combo_tab {
+ *          timeout-ms = <50>;
+ *          key-positions = <10 11>;
+ *          bindings = <&kp TAB>;
+ *      };
+ *      
+ *          combo_ralt {
+ *          timeout-ms = <50>;
+ *          key-positions = <17 16>;
+ *          bindings = <&kp RALT>;
+ *      };
+ *      
+ *                  combo_lalt {
+ *          timeout-ms = <50>;
+ *          key-positions = <11 12>;
+ *          bindings = <&kp LALT>;
+ *      };
+ *      
+ *                         combo_lgui {
+ *          timeout-ms = <50>;
+ *          key-positions = <12 13>;
+ *          bindings = <&kp LGUI>;
+ *      };
+ *      
+ *      
+ *         combo_rgui {
+ *          timeout-ms = <50>;
+ *          key-positions = <17 18>;
+ *          bindings = <&kp RGUI>;
+ *      };
+ */     
 
         
     };
@@ -99,10 +101,18 @@
 		bindings = <
 		&kp F1  &kp F2     &kp F3       &kp F4     &kp F5              &kp F6       &kp F7      &kp F8  &kp F9  &kp F10
 		&kp F11 &kp F12    &kp F13      &kp F14    &kp F15             &kp F16      &kp F17     &kp F18 &kp F19 &kp F20 
-		&reset  &bt BT_PRV &bt BT_SEL 0 &bt BT_NXT &bootloader         &kp C_POWER  &kp C_SLEEP &none   &none   &to ALPHA   
+		&reset  &bt BT_PRV &bt BT_SEL 0 &bt BT_NXT &bootloader         &kp C_POWER  &kp C_SLEEP &none   &none   &to GAME
 					                    &none      &kp SPACE           &mt DEL BSPC &none 
 		>;
 		};	
         
+		    game_layer {
+		bindings = <
+		&kp ESC   &kp Q &kp W &kp E     &kp R             &none     &none   &none &none &none 
+		&kp TAB   &kp A &kp S &kp D     &kp F             &none     &none   &none &none &none  
+		&kp LSHFT &kp Z &bt X &kp C     &kp V             &none     &none   &none &none &to ALPHA    
+					          &kp LCTRL &kp SPACE         &kp RALT  &kp TAB 
+		>;
+		};	
 	};
 };
